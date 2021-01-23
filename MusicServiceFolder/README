@@ -1,1 +1,15 @@
+// How to use this Module:
 
+// Require: local MusicService = require(game.ReplicatedStorage.MusicService.Server)
+
+// To add a sound, use this function in a server script:
+// MusicService.AddSound(SoundID,Volume,PitchNumber,"Play/Stop/Pause/Resume","NameOfYourAudio")
+// Replace the parameters with your desired preference
+
+// To fade a sound, use this function in a server script:
+// MusicService.Fade(SoundObject,DesiredVolume,TimeOfFade)
+// Replace the parameters with your desired preference
+
+// To play, stop, pause or resume a sound, use this function in a server script:
+// MusicService.Fade(SoundObject,"Play/Stop/Pause/Resume")
+// Replace the parameters with your desired preference
