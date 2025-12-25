@@ -34,13 +34,13 @@ MusicService.Disco = function(enable)
 	ColorCorrection.Name = "ReverbGames_Disco"
 	ColorCorrection.Enabled = true
 			repeat
-		Tweener(lighting.ReverbGames_Disco, 0.9, {TintColor = Color3.fromRGB(255, 0, 4)})
+		Tweener(ColorCorrection, 0.9, {TintColor = Color3.fromRGB(255, 0, 4)})
 			wait(0.9)
-		Tweener(lighting.ReverbGames_Disco, 0.9, {TintColor = Color3.fromRGB(19, 14, 181)})
+		Tweener(ColorCorrection, 0.9, {TintColor = Color3.fromRGB(19, 14, 181)})
 			wait(0.9)
-		Tweener(lighting.ReverbGames_Disco, 0.9, {TintColor = Color3.fromRGB(170, 101, 25)})
+		Tweener(ColorCorrection, 0.9, {TintColor = Color3.fromRGB(170, 101, 25)})
 			wait(0.9)
-		Tweener(lighting.ReverbGames_Disco, 0.9, {TintColor = Color3.fromRGB(148, 236, 255)})
+		Tweener(ColorCorrection, 0.9, {TintColor = Color3.fromRGB(148, 236, 255)})
 	until enable == false
 	if enable == false then
 		if game.Lighting:FindFirstChild("ReverbGames_Disco") then
@@ -64,3 +64,4 @@ MusicService.PlayStop = function(sound,playstop)
 end
 
 return MusicService
+
